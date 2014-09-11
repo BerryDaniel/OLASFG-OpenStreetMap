@@ -1,0 +1,16 @@
+<layer>
+  <name>border_country</name>
+  <id>LayerInfoImpl-2b333e08:1485f8b87f0:-36ba</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b333e08:1485f8b87f0:-36be</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b333e08:1485f8b87f0:-36bb</id>
+  </resource>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

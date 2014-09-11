@@ -1,0 +1,15 @@
+<layer>
+  <name>road_primary</name>
+  <id>LayerInfoImpl-4de14d07:1485a78b58f:-7f31</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4de14d07:1485a78b58f:-7f2f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4de14d07:1485a78b58f:-7f32</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

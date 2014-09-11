@@ -1,0 +1,80 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl-4de14d07:1485a78b58f:-8000</id>
+  <name>transportation_layer</name>
+  <mode>SINGLE</mode>
+  <title>transportation_layer</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-76eb41c8:148564a0434:-7fff</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-36de0a54:1485a96d943:1c15</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--71d81b5a:1485b1dce17:-4523</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-36de0a54:1485a96d943:a71</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--71d81b5a:1485b3afe3d:3e93</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-36de0a54:1485a84ad68:6e17</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-36de0a54:1485a84ad68:-194c</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-4de14d07:1485a78b58f:-7f31</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-20a0bd46:1485a4e2508:-41c9</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-20a0bd46:1485a3cf79e:-72b3</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-20a0bd46:1485a3cf79e:-72b7</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-36de0a54:1485a96d943:1c12</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--71d81b5a:1485b1dce17:-4527</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-36de0a54:1485a96d943:a6d</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--71d81b5a:1485b3afe3d:3e8f</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-36de0a54:1485a84ad68:6e13</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-36de0a54:1485a84ad68:-1950</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-4de14d07:1485a78b58f:-7f2f</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-20a0bd46:1485a4e2508:-41cd</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-39a6fec3:1485909d239:-5054</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-76eb41c8:148564a0434:-7ff9</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>-175.20329284668</minx>
+    <maxx>179.60400390625</maxx>
+    <miny>-36.0263786315918</miny>
+    <maxy>78.6562957763672</maxy>
+    <crs>EPSG:4326</crs>
+  </bounds>
+</layerGroup>

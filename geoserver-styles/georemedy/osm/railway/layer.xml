@@ -1,0 +1,15 @@
+<layer>
+  <name>railway</name>
+  <id>LayerInfoImpl--71d81b5a:1485b3afe3d:3e93</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--71d81b5a:1485b3afe3d:3e8f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--71d81b5a:1485b3afe3d:3e92</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

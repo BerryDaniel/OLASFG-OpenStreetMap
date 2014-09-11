@@ -1,0 +1,16 @@
+<layer>
+  <name>place_country</name>
+  <id>LayerInfoImpl--31e15f4b:1485f294109:-7ebc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--31e15f4b:1485f294109:-7ec0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--31e15f4b:1485f294109:-7ebd</id>
+  </resource>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

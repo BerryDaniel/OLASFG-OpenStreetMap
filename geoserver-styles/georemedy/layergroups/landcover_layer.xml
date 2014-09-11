@@ -1,0 +1,50 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl-67dc61f9:1486190384c:5c6</id>
+  <name>landcover_layer</name>
+  <mode>SINGLE</mode>
+  <title>landcover_layer</title>
+  <workspace>
+    <id>WorkspaceInfoImpl-76eb41c8:148564a0434:-7fff</id>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl-67dc61f9:1486190384c:5bd</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-67dc61f9:1486190384c:5c5</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-67dc61f9:1486190384c:5c1</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-67dc61f9:1486190384c:5b9</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl-67dc61f9:14861af1697:-348</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-67dc61f9:1486190384c:5b3</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-67dc61f9:1486190384c:5b5</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-67dc61f9:1486190384c:5b4</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-67dc61f9:1486190384c:5b2</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-67dc61f9:14861af1697:-34c</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>-157.945419311523</minx>
+    <maxx>178.444351196289</maxx>
+    <miny>-51.5543518066406</miny>
+    <maxy>71.9603500366211</maxy>
+    <crs>EPSG:4326</crs>
+  </bounds>
+</layerGroup>

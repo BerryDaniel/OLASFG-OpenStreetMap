@@ -1,0 +1,16 @@
+<layer>
+  <name>place_neighborhood</name>
+  <id>LayerInfoImpl-2b333e08:1485f8b87f0:-7367</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b333e08:1485f8b87f0:-736b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b333e08:1485f8b87f0:-7368</id>
+  </resource>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

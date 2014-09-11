@@ -1,0 +1,16 @@
+<layer>
+  <name>ne_bbox</name>
+  <id>LayerInfoImpl--2de46330:1485f0be8d5:-7ff9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-77b6bb60:1485bbd2ec1:-7762</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2de46330:1485f0be8d5:-7ffa</id>
+  </resource>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

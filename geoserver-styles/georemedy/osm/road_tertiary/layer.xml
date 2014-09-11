@@ -1,0 +1,15 @@
+<layer>
+  <name>road_tertiary</name>
+  <id>LayerInfoImpl-36de0a54:1485a84ad68:6e17</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-36de0a54:1485a84ad68:6e13</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-36de0a54:1485a84ad68:6e16</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

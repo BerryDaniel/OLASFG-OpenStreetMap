@@ -1,0 +1,15 @@
+<layer>
+  <name>amenity_points</name>
+  <id>LayerInfoImpl--5540d642:14863e237dc:5dd9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--5540d642:14863e237dc:5dd4</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5540d642:14863e237dc:5dd8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

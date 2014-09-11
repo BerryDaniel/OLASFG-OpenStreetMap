@@ -1,0 +1,15 @@
+<layer>
+  <name>building_misc</name>
+  <id>LayerInfoImpl--67a74f48:1486092d162:4454</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b333e08:1486000f993:1677</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--67a74f48:1486092d162:4453</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

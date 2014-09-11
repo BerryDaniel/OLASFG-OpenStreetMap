@@ -1,0 +1,15 @@
+<layer>
+  <name>road_secondary</name>
+  <id>LayerInfoImpl-36de0a54:1485a84ad68:-194c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-36de0a54:1485a84ad68:-1950</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-36de0a54:1485a84ad68:-194d</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

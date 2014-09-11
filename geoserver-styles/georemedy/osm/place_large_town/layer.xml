@@ -1,0 +1,16 @@
+<layer>
+  <name>place_large_town</name>
+  <id>LayerInfoImpl--31e15f4b:1485f294109:-7342</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--31e15f4b:1485f294109:-7346</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--31e15f4b:1485f294109:-7343</id>
+  </resource>
+  <queryable>false</queryable>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

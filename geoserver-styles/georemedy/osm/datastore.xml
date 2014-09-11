@@ -1,0 +1,33 @@
+<dataStore>
+  <id>DataStoreInfoImpl-76eb41c8:148564a0434:-7ffd</id>
+  <name>osm</name>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-76eb41c8:148564a0434:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">public</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="database">osm</entry>
+    <entry key="host">localhost</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="create database">false</entry>
+    <entry key="port">5432</entry>
+    <entry key="passwd">crypt1:FRIACoFa58yqpdbda6mb4hxz8dRya6DI</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="namespace">www.georemedy.com</entry>
+    <entry key="max connections">100</entry>
+    <entry key="user">postgres</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

@@ -1,0 +1,15 @@
+<layer>
+  <name>road_motorway</name>
+  <id>LayerInfoImpl-20a0bd46:1485a3cf79e:-72b7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-76eb41c8:148564a0434:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-20a0bd46:1485a3cf79e:-72b8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
