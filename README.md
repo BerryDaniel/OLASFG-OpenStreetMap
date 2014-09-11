@@ -3,6 +3,8 @@ OLASFG-OpenStreetMap
 
 (EPSG:4326) OpenStreetMap data - ogr2ogr loaded and styled for GeoServer
 
+Note: OpenStreetMap is open data, licensed under the Open Data Commons Open Database License and requires that you use the credit “© OpenStreetMap contributors”. http://www.openstreetmap.org/copyright
+
 The data was styled based off of the http://open.mapquest.com/
 
 - Download the planet file at http://planet.osm.org/pbf/planet-latest.osm.pbf
@@ -24,3 +26,11 @@ ogr2ogr --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 
 - Add the OLASFG-OpenStreetMap\geoserver\data\workspaces\georemedy directory to your local geoserver/data/workspace directory
 - Modify the georemedy/osm/datastore.xml to your PostgreSQL settings
 - Start Geoserver and view the georemedy:basemap
+
+Example Screenshot at ~ 1:50,000 scale:
+
+![](http://georemedy.com/wp-content/uploads/2014/09/Example-1.png)
+
+Example Screenshot at ~ 1:10,000 scale:
+
+![](http://georemedy.com/wp-content/uploads/2014/09/Example-2.png)
