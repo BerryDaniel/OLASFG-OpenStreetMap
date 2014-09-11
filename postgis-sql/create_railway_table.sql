@@ -1,0 +1,4 @@
+SELECT CAST(COALESCE(name_en,int_name,name) AS VARCHAR(128)) AS name, CAST(railway AS VARCHAR(32)) AS rail_type, CAST(CASE WHEN length(regexp_replace(replace(regexp_replace(ref,'\;(.*)|\,(.*)',''),' ',''),'^(?!.*[0-9])','')) > 8 THEN null ELSE UPPER(regexp_replace(replace(regexp_replace(ref,'\;(.*)|\,(.*)',''),' ',''),'^(?!.*[0-9])','')) END AS VARCHAR(8)) AS ref, CAST(FLOOR(CAST(osm_id AS NUMERIC))AS BIGINT) AS osm_id, osm_timestamp::TIMESTAMP AS last_modified, wkb_geometry INTO railway FROM lines WHERE railway IN ('rail','tram','light_rail','narrow_gauge','funicular','disused','subway');
+CREATE INDEX railway_geom_idx on railway using gist (wkb_geometry);
+CREATE INDEX railway_idx on railway (rail_type);
+VACUUM ANALYZE railway;
