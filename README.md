@@ -12,7 +12,10 @@ The data was styled based off of the http://open.mapquest.com/
 - Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries or download QGIS at http://www.qgis.org/en/site/
 - Load the OpenStreetMap data into PostgreSQL using the following commands:
 
-```createdb -U postgres osm```
+```PLpgSQL
+createdb -U postgres osm
+```
+
 ```psql -U postgres -d osm_usa -c "CREATE EXTENSION postgis;"```
 ```psql -U postgres -d osm_usa -a -f cleanGeometry.sql```
 ```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on```
