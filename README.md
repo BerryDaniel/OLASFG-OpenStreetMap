@@ -12,7 +12,7 @@ The data was styled based off of the http://open.mapquest.com/
 - Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries or download QGIS at http://www.qgis.org/en/site/
 - Load the OpenStreetMap data into PostgreSQL using the following commands:
 
-```PLpgSQL
+```
 createdb -U postgres osm
 ```
 ```
@@ -50,9 +50,10 @@ psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"
 ```
 
 - Download and install GeoServer at http://geoserver.org/
-- Add the georemedy directory to your local geoserver/data/workspace directory
-- Modify the georemedy/pg/datastore.xml to your PostgreSQL settings
-- Start Geoserver and view the georemedy:basemap
+- Download the OLASFG-OpenStreetMap.zip (391 MB) at http://download.georemedy.com/OLASFG-OpenStreetMap.zip
+- Unzip the openstreetmap.zip into your local geoserver/data/workspace directory
+- Modify the geoserver/data/workspace/openstreetmap/pg/datastore.xml to your PostgreSQL settings
+- Start Geoserver and view the openstreetmap:basemap
 
 Example Screenshot at ~ 1:50,000 scale:
 
