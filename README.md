@@ -7,9 +7,9 @@ Note: OpenStreetMap is open data, licensed under the Open Data Commons Open Data
 
 The data was styled based off of the http://open.mapquest.com/
 
-- Download the planet file at http://planet.osm.org/pbf/planet-latest.osm.pbf
+- Download the planet file at http://planet.osm.org/pbf/planet-latest.osm.pbf or a smaller extract at http://download.geofabrik.de/
 - Download PostgresSQL (9.3 used) and PostGIS (2.1.5 used) at http://www.postgresql.org/download/
-- Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries or download QGIS at http://www.qgis.org/en/site/
+- Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
 - Load the OpenStreetMap data into PostgreSQL using the following commands:
 
 ```
@@ -51,6 +51,7 @@ psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"
 
 - Download and install GeoServer at http://geoserver.org/
 - Download the OLASFG-OpenStreetMap.zip (391 MB) at http://download.georemedy.com/OLASFG-OpenStreetMap.zip
+Note: Contains osm_land data from http://openstreetmapdata.com/data/land-polygons (Data is copyright OpenStreetMap contributors and available under the ODbL.)
 - Unzip the openstreetmap.zip into your local geoserver/data/workspace directory
 - Modify the geoserver/data/workspace/openstreetmap/pg/datastore.xml to your PostgreSQL settings
 - Start Geoserver and view the openstreetmap:basemap
