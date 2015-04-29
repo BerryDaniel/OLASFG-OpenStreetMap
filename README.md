@@ -15,18 +15,39 @@ The data was styled based off of the http://open.mapquest.com/
 ```PLpgSQL
 createdb -U postgres osm
 ```
-
-```psql -U postgres -d osm_usa -c "CREATE EXTENSION postgis;"```
-```psql -U postgres -d osm_usa -a -f cleanGeometry.sql```
-```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on```
-```psql -U postgres -d osm -a -f osm_point_tables.sql```
-```psql -U postgres -d osm -a -c "DROP TABLE points;"```
-```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf lines --debug on```
-```psql -U postgres -d osm -a -f osm_line_tables.sql```
-```psql -U postgres -d osm -a -c "DROP TABLE lines;"```
-```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf multipolygons --debug on```
-```psql -U postgres -d osm -a -f osm_polygon_tables.sql```
-```psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"```
+```
+psql -U postgres -d osm_usa -c "CREATE EXTENSION postgis;"
+```
+```
+psql -U postgres -d osm_usa -a -f cleanGeometry.sql
+```
+```
+ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on
+```
+```
+psql -U postgres -d osm -a -f osm_point_tables.sql
+```
+```
+psql -U postgres -d osm -a -c "DROP TABLE points;"
+```
+```
+ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf lines --debug on
+```
+```
+psql -U postgres -d osm -a -f osm_line_tables.sql
+```
+```
+psql -U postgres -d osm -a -c "DROP TABLE lines;"
+```
+```
+ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf multipolygons --debug on
+```
+```
+psql -U postgres -d osm -a -f osm_polygon_tables.sql
+```
+```
+psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"
+```
 
 - Download and install GeoServer at http://geoserver.org/
 - Add the georemedy directory to your local geoserver/data/workspace directory
