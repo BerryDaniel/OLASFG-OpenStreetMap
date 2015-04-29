@@ -56,6 +56,8 @@ Note: Contains osm_land data from http://openstreetmapdata.com/data/land-polygon
 - Modify the geoserver/data/workspace/openstreetmap/pg/datastore.xml to your PostgreSQL settings
 - Start Geoserver and view the openstreetmap:basemap
 
+Note: Contains osm_land data from http://openstreetmapdata.com/data/land-polygons (Data is copyright OpenStreetMap contributors and available under the ODbL.)
+
 Example Screenshot at ~ 1:50,000 scale:
 
 ![](http://georemedy.com/wp-content/uploads/2014/09/Example-1.png)
