@@ -10,9 +10,11 @@ The data was styled based off of the http://open.mapquest.com/
 - Download the planet file at http://planet.osm.org/pbf/planet-latest.osm.pbf
 - Download PostgresSQL (9.3 used) and PostGIS (2.1.5 used) at http://www.postgresql.org/download/
 - Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries or download QGIS at http://www.qgis.org/en/site/
-- Load the OpenStreetMap data using the following command:
+- Load the OpenStreetMap data into PostgreSQL using the following commands:
 
-ogr2ogr --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE {ADD DEDICATED MEMORY IN MB, E.G. 8000} -f PostgreSQL "PG:host=localhost user={ADD USER} dbname=osm password={ADD PASSWORD}" planet-latest.osm.pbf --debug on
+   createdb -U postgres osm_usa
+
+   ogr2ogr --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE {ADD DEDICATED MEMORY IN MB, E.G. 8000} -f PostgreSQL "PG:host=localhost user={ADD USER} dbname=osm password={ADD PASSWORD}" planet-latest.osm.pbf --debug on
 
 Example:
 ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE {ADD DEDICATED MEMORY IN MB, E.G. 8000} -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on
