@@ -51,7 +51,6 @@ psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"
 
 - Download and install GeoServer at http://geoserver.org/
 - Download the OLASFG-OpenStreetMap.zip (391 MB) at http://download.georemedy.com/OLASFG-OpenStreetMap.zip
-Note: Contains osm_land data from http://openstreetmapdata.com/data/land-polygons (Data is copyright OpenStreetMap contributors and available under the ODbL.)
 - Unzip the openstreetmap.zip into your local geoserver/data/workspace directory
 - Modify the geoserver/data/workspace/openstreetmap/pg/datastore.xml to your PostgreSQL settings
 - Start Geoserver and view the openstreetmap:basemap
