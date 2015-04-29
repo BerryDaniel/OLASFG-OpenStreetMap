@@ -12,21 +12,22 @@ The data was styled based off of the http://open.mapquest.com/
 - Install (GDAL/OGR >= 1.10.0), binaries can be found at http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries or download QGIS at http://www.qgis.org/en/site/
 - Load the OpenStreetMap data into PostgreSQL using the following commands:
 
-```createdb -U postgres osm_usa```
+```createdb -U postgres osm```
+```psql -U postgres -d osm_usa -c "CREATE EXTENSION postgis;"```
+```psql -U postgres -d osm_usa -a -f cleanGeometry.sql```
+```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on```
+```psql -U postgres -d osm -a -f osm_point_tables.sql```
+```psql -U postgres -d osm -a -c "DROP TABLE points;"```
+```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf lines --debug on```
+```psql -U postgres -d osm -a -f osm_line_tables.sql```
+```psql -U postgres -d osm -a -c "DROP TABLE lines;"```
+```ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf multipolygons --debug on```
+```psql -U postgres -d osm -a -f osm_polygon_tables.sql```
+```psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"```
 
-ogr2ogr --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE {ADD DEDICATED MEMORY IN MB, E.G. 8000} -f PostgreSQL "PG:host=localhost user={ADD USER} dbname=osm password={ADD PASSWORD}" planet-latest.osm.pbf --debug on
-
-Example:
-ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE {ADD DEDICATED MEMORY IN MB, E.G. 8000} -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on
-
-- After the ogr2ogr import has finished run the following scripts:
-	- OLASFG-OpenStreetMap/postgis-sql/cleanGeometry/cleanGeometry.sql
-	- OLASFG-OpenStreetMap/postgis-sql/cleanGeometry/cleanup__geometry.sql
-
-- After the geometries have been cleaned up, run all remaining scripts in the OLASFG-OpenStreetMap/postgis-sql directory to build the required tables
 - Download and install GeoServer at http://geoserver.org/
-- Add the OLASFG-OpenStreetMap\geoserver\data\workspaces\georemedy directory to your local geoserver/data/workspace directory
-- Modify the georemedy/osm/datastore.xml to your PostgreSQL settings
+- Add the georemedy directory to your local geoserver/data/workspace directory
+- Modify the georemedy/pg/datastore.xml to your PostgreSQL settings
 - Start Geoserver and view the georemedy:basemap
 
 Example Screenshot at ~ 1:50,000 scale:

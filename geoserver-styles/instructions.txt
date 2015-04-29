@@ -1,2 +1,0 @@
-1. Copy the georemedy directory to the geoserver/data/workspace directory
-2. Modify the georemedy/osm/datastore.xml to your PostGIS settings
