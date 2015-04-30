@@ -57,6 +57,11 @@ psql -U postgres -d osm -a -c "DROP TABLE multipolygons;"
 
 Note: Contains osm_land data from http://openstreetmapdata.com/data/land-polygons (Data is copyright OpenStreetMap contributors and available under the ODbL.)
 
+Important: Styles use Unifont Medium, if you don't have the specific font you can download unifont-*.ttf from http://unifoundry.com/pub/unifont-7.0.06/font-builds/unifont-7.0.06.ttf.
+Note: GPL Unifont is licensed under GPL - http://en.wikipedia.org/wiki/GPL
+
+If you need to add the TTF file then copy the file to your geoserver/data/styles directory and restart GeoServer.
+
 Example Screenshot at ~ 1:50,000 scale:
 
 ![](http://georemedy.com/wp-content/uploads/2014/09/Example-1.png)
