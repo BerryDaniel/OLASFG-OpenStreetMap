@@ -62,10 +62,6 @@ Note: GPL Unifont is licensed under GPL - http://en.wikipedia.org/wiki/GPL
 
 If you need to add the TTF file then copy the file to your geoserver/data/styles directory and restart GeoServer.
 
-Example Screenshot at ~ 1:50,000 scale:
+Example Screenshot at ~ 1:136,000 scale:
 
-![](http://georemedy.com/wp-content/uploads/2014/09/Example-1.png)
-
-Example Screenshot at ~ 1:10,000 scale:
-
-![](http://georemedy.com/wp-content/uploads/2014/09/Example-2.png)
+![](http://georemedy.com/wp-content/uploads/2015/04/basemap_136k.png)
