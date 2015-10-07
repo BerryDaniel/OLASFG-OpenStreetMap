@@ -16,10 +16,10 @@ The data was styled based off of the http://open.mapquest.com/
 createdb -U postgres osm
 ```
 ```
-psql -U postgres -d osm_usa -c "CREATE EXTENSION postgis;"
+psql -U postgres -d osm -c "CREATE EXTENSION postgis;"
 ```
 ```
-psql -U postgres -d osm_usa -a -f cleanGeometry.sql
+psql -U postgres -d osm -a -f cleanGeometry.sql
 ```
 ```
 ogr2ogr --config OSM_CONFIG_FILE osmconf.ini --config OGR_INTERLEAVED_READING YES --config OSM_MAX_TMPFILE_SIZE 8000 -f PostgreSQL "PG:host=localhost user=postgres dbname=osm password=postgres" planet-latest.osm.pbf points --debug on
